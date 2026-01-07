@@ -1,0 +1,25 @@
+<div>
+  <nav class="navbar navbar-expand-nd navbar-dark main-color fixed-top">
+    <a href="" class="navbar-brand">Todo Ap</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" arial-controls="navbarNav" arial-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        {% if user %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/todos/todo-page">Home</a>
+        </li>
+        {% endif %}
+      </ul>
+
+      <ul class="navbar-nav nl-auto">
+        {% if user %}
+        <li class="nav-item n-1">
+          <a type="button" class="btn btn-outline-light text-white" onclick="logout()">Logout</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+</div>
